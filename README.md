@@ -7,5 +7,4 @@ Currently I have implemented two methods -
 1. Opinion Feature Mining (**Mining Opinion Features in Customer Reviews** (Liu et al.))
 2. Doc2Vec Model and Clustering
 
-Currently working on -  
-1. Facebook Research's InferSent model
+Currently experimenting with Facebook Research's InferSent model
