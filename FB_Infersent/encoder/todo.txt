@@ -1,0 +1,3 @@
+1. Similarity find odd sentences
+1. Ratings add in embedding, or split clusters
+3. Different clustering techniques
