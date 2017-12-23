@@ -25,13 +25,15 @@ This implementation was based on Bing Liu's [paper](https://www.cs.uic.edu/~liub
   * Lemmatising
   * Spelling correction
 
+
 2. **Noun Phrase Extraction** – Used NLTK Chunker with a RegEx pattern to extract Noun phrases
 
 3. **Frequent Feature Generation** – Used Association Rule Mining to mine frequent occurring phrases. We run CBA(Bing Liu) [(Implementation)](http://cgi.csc.liv.ac.uk/~frans/KDD/Software/CBA/cba.html), an Association Rule Miner based on the Apriori Algorithm.
 
 4. **Feature Pruning** -
   * **Compactness Pruning** - This method aims to remove those features that have atleast two words and are likely to be meaningless.
-  * **Redundancy Pruning** - This step mainly focuses on removing redundant features containing single words.
+  * **Redundancy Pruning** - This step mainly focuses on removing redundant features containing single words.    
+
 
 5. **Opinion Words Extraction** - Opinion words are words that people use to ex-
 press a positive or negative opinion. Extract the closest adjective in the neighbourhood of a feature occurring in a sentence, this adjective is considered to be the opinion for that feature.
@@ -43,7 +45,7 @@ For this purpose two functions were implemented -
 
 7. **Opinion Matrix Formation** - We decide to take the most frequently appearing nouns/noun phrases(features). This is implemented by taking the nouns from the saved positive, negative and neutral opinions list and sorting them in reverse order of their frequency in the entire text of reviews. We then take the 20 most common nouns from the sorted list. satisfied then we mark a ‘1’ in the column corresponding to that list of opinions, otherwise, put a ‘0’.
 
-<p><img src="results.png" align="center"/></p>
+ <p><img src="results.png" align="center"/></p>
 
 
 ## Sentence Embeddings
@@ -76,14 +78,14 @@ This is a sentence embedding model given by [Facebook Research](https://github.c
 
 Some screenshots of the clusters using different techniques -
 
-  1. **Original Clusters**
+1. **Original Clusters**
 
   <p><img src="img1.png" align="center"/></p>
 
-  2. **Appended ratings at the end of each embedding**
+2. **Appended ratings at the end of each embedding**
 
   <p><img src="img2.png" align="center"/></p>
 
-  3. **Splitting clusters**
+3. **Splitting clusters**
 
   <p><img src="img3.png" align="center"/></p>
