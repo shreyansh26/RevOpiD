@@ -76,11 +76,11 @@ This is a sentence embedding model given by [Facebook Research](https://github.c
 
 ### Screenshots
 
-  1. **Original Clusters**
+  1. **Original Clusters**  
     <p align="center"><img src="img1.png"/></p>
 
-  2. **Appended ratings at the end of each embedding**
+  2. **Appended ratings at the end of each embedding**  
     <p align="center"><img src="img2.png"/></p>
 
-  3. **Splitting clusters**
+  3. **Splitting clusters**  
     <p align="center"><img src="img3.png"/></p>
