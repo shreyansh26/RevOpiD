@@ -64,11 +64,11 @@ This is a sentence embedding model given by [Facebook Research](https://github.c
 
 1. **Make embeddings**    
 
-  **Approach 1** - Used GloVe to build vocabulary. Here we first try to train and build embeddings on the review level. But on analyzing the similarity and clusters (discussed later), we find that its performance is quite poor. So we split the reviews into sentences and perform the same operations at the sentence level.
+    **Approach 1** - Used GloVe to build vocabulary. Here we first try to train and build embeddings on the review level. But on analyzing the similarity and clusters (discussed later), we find that its performance is quite poor. So we split the reviews into sentences and perform the same operations at the sentence level.  
 
-  **Approach 2** – Further, split the sentences at Conjunctions like ‘and’ and ‘or’ and treat those as sentences.
+    **Approach 2** – Further, split the sentences at Conjunctions like ‘and’ and ‘or’ and treat those as sentences.  
 
-  **Approach 3** – Average of word vectors using Word2Vec.
+    **Approach 3** – Average of word vectors using Word2Vec.
 
 2. **Spectral Clustering** – As performed with Doc2Vec, we perform clustering on the embeddings obtained. This groups the similar sentences (which mostly describe a particular feature together). To improve the results, we try considering the ratings of the reviews as well. Two approaches -
   * Append the rating of the review to which the sentence belongs at the end of the embedding for each review. However, doesn’t help much. Although improves the results a bit.
@@ -77,10 +77,10 @@ This is a sentence embedding model given by [Facebook Research](https://github.c
 ### Screenshots
 
   1. **Original Clusters**  
-    <p align="center"><img src="img1.png"/></p>
+    <img src="img1.png"/>
 
   2. **Appended ratings at the end of each embedding**  
-    <p align="center"><img src="img2.png"/></p>
+    <img src="img2.png"/>
 
   3. **Splitting clusters**  
-    <p align="center"><img src="img3.png"/></p>
+    <img src="img3.png"/>
