@@ -43,6 +43,7 @@ For this purpose two functions were implemented -
   * ***Orientation Search*** - It searches the WordNet and the seed list for each target adjective word to predict its orientation. If there exists a synonym of that adjective in the seed list, then the adjective is added to the seed list with the same orientation as that of its synonym. Otherwise, the function continues to search the antonym set of the target word in WordNet and checks if any antonym is in the seed list i.e has known orientation. If so, the target orientation is set to the opposite of the antonym and the adjective is added to the seed list.
   * ***Orientation Prediction*** - This function repeated calls the Orientation Search function with the opinion list and seed list as parameters. It checks the size of the seed list before and after calling the Orientation Search. It repeats the process until both the sizes come out to be same i.e no word was included in the seed list in that call to the Orientation Search. The reason why Orientation Search is called many times is that it may be possible that a word’s orientation may be found in a later call of the procedure with an updated seed list. For those adjectives that WordNet cannot recognize, they are discarded as they may not be valid words and for those that we cannot find orientations, we assign them a neutral orientation. Also, for the case that the synonyms/antonyms of an adjective have different known semantic orientations, we use the first found orientation as the orientation for the given adjective.
 
+
 7. **Opinion Matrix Formation** - We decide to take the most frequently appearing nouns/noun phrases(features). This is implemented by taking the nouns from the saved positive, negative and neutral opinions list and sorting them in reverse order of their frequency in the entire text of reviews. We then take the 20 most common nouns from the sorted list. satisfied then we mark a ‘1’ in the column corresponding to that list of opinions, otherwise, put a ‘0’.
 
  <p><img src="results.png" align="center"/></p>
@@ -78,14 +79,14 @@ This is a sentence embedding model given by [Facebook Research](https://github.c
 
 Some screenshots of the clusters using different techniques -
 
-1. **Original Clusters**
+  1. **Original Clusters**
 
-  <p><img src="img1.png" align="center"/></p>
+    <p><img src="img1.png" align="center"/></p>
 
-2. **Appended ratings at the end of each embedding**
+  2. **Appended ratings at the end of each embedding**
 
-  <p><img src="img2.png" align="center"/></p>
+    <p><img src="img2.png" align="center"/></p>
 
-3. **Splitting clusters**
+  3. **Splitting clusters**
 
-  <p><img src="img3.png" align="center"/></p>
+    <p><img src="img3.png" align="center"/></p>
