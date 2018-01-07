@@ -3,6 +3,8 @@ Review Opinion Diversification
 
 A project I worked on in my 3rd Semester. [RevOpiD](https://sites.google.com/itbhu.ac.in/revopid-2017) was a shared task in IJCNLP 2017, Taipei, Taiwan.
 
+My System Description Paper for this task can be found [here](revopid-baseline.pdf).
+
 I implemented three approaches of solving the problem -  
 1. Opinion Feature Mining (**Mining Opinion Features in Customer Reviews** (Liu et al.))
 2. Doc2Vec Model and Clustering
