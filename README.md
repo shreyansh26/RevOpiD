@@ -62,7 +62,7 @@ We also approached the problem with Deep Learning Techniques, using Sentence Emb
 
 ### InferSent
 
-This is a sentence embedding model given by [Facebook Research](https://github.com/facebookresearch/InferSent).
+This is a sentence embedding model developed by [Facebook Research](https://github.com/facebookresearch/InferSent).
 
 1. **Make embeddings**    
 
